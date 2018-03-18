@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B759BE3205E9427007C7F1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759BE2205E9427007C7F1B /* AppDelegate.swift */; };
-		2B759BE5205E9427007C7F1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759BE4205E9427007C7F1B /* ViewController.swift */; };
+		2B759BE5205E9427007C7F1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759BE4205E9427007C7F1B /* MainViewController.swift */; };
 		2B759BE8205E9427007C7F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B759BE6205E9427007C7F1B /* Main.storyboard */; };
 		2B759BEA205E9427007C7F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B759BE9205E9427007C7F1B /* Assets.xcassets */; };
 		2B759BED205E9427007C7F1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B759BEB205E9427007C7F1B /* LaunchScreen.storyboard */; };
@@ -20,6 +20,8 @@
 		2B759C1C205E99BD007C7F1B /* TimePlannerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C1B205E99BD007C7F1B /* TimePlannerMacTests.swift */; };
 		2B759C25205E9F07007C7F1B /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C24205E9F07007C7F1B /* TimeManager.swift */; };
 		2B759C26205E9F07007C7F1B /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C24205E9F07007C7F1B /* TimeManager.swift */; };
+		2B759C28205EA855007C7F1B /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C27205EA855007C7F1B /* TimeCell.swift */; };
+		2B759C2A205EAAA7007C7F1B /* ChooseTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C29205EAAA7007C7F1B /* ChooseTimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,7 @@
 /* Begin PBXFileReference section */
 		2B759BDF205E9427007C7F1B /* TimePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B759BE2205E9427007C7F1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B759BE4205E9427007C7F1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B759BE4205E9427007C7F1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2B759BE7205E9427007C7F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B759BE9205E9427007C7F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B759BEC205E9427007C7F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		2B759C1B205E99BD007C7F1B /* TimePlannerMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePlannerMacTests.swift; sourceTree = "<group>"; };
 		2B759C1D205E99BD007C7F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B759C24205E9F07007C7F1B /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		2B759C27205EA855007C7F1B /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		2B759C29205EAAA7007C7F1B /* ChooseTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +126,13 @@
 			isa = PBXGroup;
 			children = (
 				2B759BE2205E9427007C7F1B /* AppDelegate.swift */,
-				2B759BE4205E9427007C7F1B /* ViewController.swift */,
+				2B759BE4205E9427007C7F1B /* MainViewController.swift */,
 				2B759BE6205E9427007C7F1B /* Main.storyboard */,
+				2B759C27205EA855007C7F1B /* TimeCell.swift */,
 				2B759BE9205E9427007C7F1B /* Assets.xcassets */,
 				2B759BEB205E9427007C7F1B /* LaunchScreen.storyboard */,
 				2B759BEE205E9427007C7F1B /* Info.plist */,
+				2B759C29205EAAA7007C7F1B /* ChooseTimeViewController.swift */,
 			);
 			path = TimePlanner;
 			sourceTree = "<group>";
@@ -327,7 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B759BE5205E9427007C7F1B /* ViewController.swift in Sources */,
+				2B759C28205EA855007C7F1B /* TimeCell.swift in Sources */,
+				2B759C2A205EAAA7007C7F1B /* ChooseTimeViewController.swift in Sources */,
+				2B759BE5205E9427007C7F1B /* MainViewController.swift in Sources */,
 				2B759BE3205E9427007C7F1B /* AppDelegate.swift in Sources */,
 				2B759C25205E9F07007C7F1B /* TimeManager.swift in Sources */,
 			);
