@@ -13,6 +13,11 @@
 		2B759BEA205E9427007C7F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B759BE9205E9427007C7F1B /* Assets.xcassets */; };
 		2B759BED205E9427007C7F1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B759BEB205E9427007C7F1B /* LaunchScreen.storyboard */; };
 		2B759BF8205E9427007C7F1B /* TimePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759BF7205E9427007C7F1B /* TimePlannerTests.swift */; };
+		2B759C09205E99BD007C7F1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C08205E99BD007C7F1B /* AppDelegate.swift */; };
+		2B759C0B205E99BD007C7F1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C0A205E99BD007C7F1B /* ViewController.swift */; };
+		2B759C0D205E99BD007C7F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B759C0C205E99BD007C7F1B /* Assets.xcassets */; };
+		2B759C10205E99BD007C7F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B759C0E205E99BD007C7F1B /* Main.storyboard */; };
+		2B759C1C205E99BD007C7F1B /* TimePlannerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C1B205E99BD007C7F1B /* TimePlannerMacTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +27,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2B759BDE205E9427007C7F1B;
 			remoteInfo = TimePlanner;
+		};
+		2B759C18205E99BD007C7F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B759BD7205E9427007C7F1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B759C05205E99BD007C7F1B;
+			remoteInfo = TimePlannerMac;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +48,16 @@
 		2B759BF3205E9427007C7F1B /* TimePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B759BF7205E9427007C7F1B /* TimePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePlannerTests.swift; sourceTree = "<group>"; };
 		2B759BF9205E9427007C7F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B759C06205E99BD007C7F1B /* TimePlannerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimePlannerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B759C08205E99BD007C7F1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B759C0A205E99BD007C7F1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B759C0C205E99BD007C7F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B759C0F205E99BD007C7F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B759C11205E99BD007C7F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B759C12205E99BD007C7F1B /* TimePlannerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimePlannerMac.entitlements; sourceTree = "<group>"; };
+		2B759C17205E99BD007C7F1B /* TimePlannerMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimePlannerMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B759C1B205E99BD007C7F1B /* TimePlannerMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePlannerMacTests.swift; sourceTree = "<group>"; };
+		2B759C1D205E99BD007C7F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +75,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B759C03205E99BD007C7F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B759C14205E99BD007C7F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +97,8 @@
 			children = (
 				2B759BE1205E9427007C7F1B /* TimePlanner */,
 				2B759BF6205E9427007C7F1B /* TimePlannerTests */,
+				2B759C07205E99BD007C7F1B /* TimePlannerMac */,
+				2B759C1A205E99BD007C7F1B /* TimePlannerMacTests */,
 				2B759BE0205E9427007C7F1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +108,8 @@
 			children = (
 				2B759BDF205E9427007C7F1B /* TimePlanner.app */,
 				2B759BF3205E9427007C7F1B /* TimePlannerTests.xctest */,
+				2B759C06205E99BD007C7F1B /* TimePlannerMac.app */,
+				2B759C17205E99BD007C7F1B /* TimePlannerMacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +134,28 @@
 				2B759BF9205E9427007C7F1B /* Info.plist */,
 			);
 			path = TimePlannerTests;
+			sourceTree = "<group>";
+		};
+		2B759C07205E99BD007C7F1B /* TimePlannerMac */ = {
+			isa = PBXGroup;
+			children = (
+				2B759C08205E99BD007C7F1B /* AppDelegate.swift */,
+				2B759C0A205E99BD007C7F1B /* ViewController.swift */,
+				2B759C0C205E99BD007C7F1B /* Assets.xcassets */,
+				2B759C0E205E99BD007C7F1B /* Main.storyboard */,
+				2B759C11205E99BD007C7F1B /* Info.plist */,
+				2B759C12205E99BD007C7F1B /* TimePlannerMac.entitlements */,
+			);
+			path = TimePlannerMac;
+			sourceTree = "<group>";
+		};
+		2B759C1A205E99BD007C7F1B /* TimePlannerMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B759C1B205E99BD007C7F1B /* TimePlannerMacTests.swift */,
+				2B759C1D205E99BD007C7F1B /* Info.plist */,
+			);
+			path = TimePlannerMacTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +196,41 @@
 			productReference = 2B759BF3205E9427007C7F1B /* TimePlannerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2B759C05205E99BD007C7F1B /* TimePlannerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B759C1E205E99BD007C7F1B /* Build configuration list for PBXNativeTarget "TimePlannerMac" */;
+			buildPhases = (
+				2B759C02205E99BD007C7F1B /* Sources */,
+				2B759C03205E99BD007C7F1B /* Frameworks */,
+				2B759C04205E99BD007C7F1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimePlannerMac;
+			productName = TimePlannerMac;
+			productReference = 2B759C06205E99BD007C7F1B /* TimePlannerMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B759C16205E99BD007C7F1B /* TimePlannerMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B759C21205E99BD007C7F1B /* Build configuration list for PBXNativeTarget "TimePlannerMacTests" */;
+			buildPhases = (
+				2B759C13205E99BD007C7F1B /* Sources */,
+				2B759C14205E99BD007C7F1B /* Frameworks */,
+				2B759C15205E99BD007C7F1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B759C19205E99BD007C7F1B /* PBXTargetDependency */,
+			);
+			name = TimePlannerMacTests;
+			productName = TimePlannerMacTests;
+			productReference = 2B759C17205E99BD007C7F1B /* TimePlannerMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +250,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2B759BDE205E9427007C7F1B;
 					};
+					2B759C05205E99BD007C7F1B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2B759C16205E99BD007C7F1B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B759C05205E99BD007C7F1B;
+					};
 				};
 			};
 			buildConfigurationList = 2B759BDA205E9427007C7F1B /* Build configuration list for PBXProject "TimePlanner" */;
@@ -170,6 +276,8 @@
 			targets = (
 				2B759BDE205E9427007C7F1B /* TimePlanner */,
 				2B759BF2205E9427007C7F1B /* TimePlannerTests */,
+				2B759C05205E99BD007C7F1B /* TimePlannerMac */,
+				2B759C16205E99BD007C7F1B /* TimePlannerMacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +294,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2B759BF1205E9427007C7F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B759C04205E99BD007C7F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B759C0D205E99BD007C7F1B /* Assets.xcassets in Resources */,
+				2B759C10205E99BD007C7F1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B759C15205E99BD007C7F1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +336,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B759C02205E99BD007C7F1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B759C0B205E99BD007C7F1B /* ViewController.swift in Sources */,
+				2B759C09205E99BD007C7F1B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B759C13205E99BD007C7F1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B759C1C205E99BD007C7F1B /* TimePlannerMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,6 +360,11 @@
 			isa = PBXTargetDependency;
 			target = 2B759BDE205E9427007C7F1B /* TimePlanner */;
 			targetProxy = 2B759BF4205E9427007C7F1B /* PBXContainerItemProxy */;
+		};
+		2B759C19205E99BD007C7F1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B759C05205E99BD007C7F1B /* TimePlannerMac */;
+			targetProxy = 2B759C18205E99BD007C7F1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -237,6 +383,14 @@
 				2B759BEC205E9427007C7F1B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2B759C0E205E99BD007C7F1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B759C0F205E99BD007C7F1B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +567,84 @@
 			};
 			name = Release;
 		};
+		2B759C1F205E99BD007C7F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimePlannerMac/TimePlannerMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R5ZXKV545V;
+				INFOPLIST_FILE = TimePlannerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.TimePlannerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2B759C20205E99BD007C7F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimePlannerMac/TimePlannerMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R5ZXKV545V;
+				INFOPLIST_FILE = TimePlannerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.TimePlannerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2B759C22205E99BD007C7F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R5ZXKV545V;
+				INFOPLIST_FILE = TimePlannerMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.TimePlannerMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimePlannerMac.app/Contents/MacOS/TimePlannerMac";
+			};
+			name = Debug;
+		};
+		2B759C23205E99BD007C7F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R5ZXKV545V;
+				INFOPLIST_FILE = TimePlannerMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.TimePlannerMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimePlannerMac.app/Contents/MacOS/TimePlannerMac";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,6 +671,24 @@
 			buildConfigurations = (
 				2B759C00205E9427007C7F1B /* Debug */,
 				2B759C01205E9427007C7F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B759C1E205E99BD007C7F1B /* Build configuration list for PBXNativeTarget "TimePlannerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B759C1F205E99BD007C7F1B /* Debug */,
+				2B759C20205E99BD007C7F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B759C21205E99BD007C7F1B /* Build configuration list for PBXNativeTarget "TimePlannerMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B759C22205E99BD007C7F1B /* Debug */,
+				2B759C23205E99BD007C7F1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
