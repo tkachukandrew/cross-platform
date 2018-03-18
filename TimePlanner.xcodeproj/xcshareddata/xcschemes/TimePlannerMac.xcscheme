@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2B759BDE205E9427007C7F1B"
-               BuildableName = "TimePlanner.app"
-               BlueprintName = "TimePlanner"
+               BlueprintIdentifier = "2B759C05205E99BD007C7F1B"
+               BuildableName = "TimePlannerMac.app"
+               BlueprintName = "TimePlannerMac"
                ReferencedContainer = "container:TimePlanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,9 +34,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2B759BF2205E9427007C7F1B"
-               BuildableName = "TimePlannerTests.xctest"
-               BlueprintName = "TimePlannerTests"
+               BlueprintIdentifier = "2B759C16205E99BD007C7F1B"
+               BuildableName = "TimePlannerMacTests.xctest"
+               BlueprintName = "TimePlannerMacTests"
                ReferencedContainer = "container:TimePlanner.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,9 +44,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2B759BDE205E9427007C7F1B"
-            BuildableName = "TimePlanner.app"
-            BlueprintName = "TimePlanner"
+            BlueprintIdentifier = "2B759C05205E99BD007C7F1B"
+            BuildableName = "TimePlannerMac.app"
+            BlueprintName = "TimePlannerMac"
             ReferencedContainer = "container:TimePlanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -68,9 +68,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2B759BDE205E9427007C7F1B"
-            BuildableName = "TimePlanner.app"
-            BlueprintName = "TimePlanner"
+            BlueprintIdentifier = "2B759C05205E99BD007C7F1B"
+            BuildableName = "TimePlannerMac.app"
+            BlueprintName = "TimePlannerMac"
             ReferencedContainer = "container:TimePlanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -87,9 +87,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2B759BDE205E9427007C7F1B"
-            BuildableName = "TimePlanner.app"
-            BlueprintName = "TimePlanner"
+            BlueprintIdentifier = "2B759C05205E99BD007C7F1B"
+            BuildableName = "TimePlannerMac.app"
+            BlueprintName = "TimePlannerMac"
             ReferencedContainer = "container:TimePlanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

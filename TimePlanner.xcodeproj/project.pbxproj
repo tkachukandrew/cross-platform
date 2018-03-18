@@ -18,6 +18,8 @@
 		2B759C0D205E99BD007C7F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B759C0C205E99BD007C7F1B /* Assets.xcassets */; };
 		2B759C10205E99BD007C7F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B759C0E205E99BD007C7F1B /* Main.storyboard */; };
 		2B759C1C205E99BD007C7F1B /* TimePlannerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C1B205E99BD007C7F1B /* TimePlannerMacTests.swift */; };
+		2B759C25205E9F07007C7F1B /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C24205E9F07007C7F1B /* TimeManager.swift */; };
+		2B759C26205E9F07007C7F1B /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759C24205E9F07007C7F1B /* TimeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		2B759C17205E99BD007C7F1B /* TimePlannerMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimePlannerMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B759C1B205E99BD007C7F1B /* TimePlannerMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePlannerMacTests.swift; sourceTree = "<group>"; };
 		2B759C1D205E99BD007C7F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B759C24205E9F07007C7F1B /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		2B759BD6205E9427007C7F1B = {
 			isa = PBXGroup;
 			children = (
+				2B759C24205E9F07007C7F1B /* TimeManager.swift */,
 				2B759BE1205E9427007C7F1B /* TimePlanner */,
 				2B759BF6205E9427007C7F1B /* TimePlannerTests */,
 				2B759C07205E99BD007C7F1B /* TimePlannerMac */,
@@ -325,6 +329,7 @@
 			files = (
 				2B759BE5205E9427007C7F1B /* ViewController.swift in Sources */,
 				2B759BE3205E9427007C7F1B /* AppDelegate.swift in Sources */,
+				2B759C25205E9F07007C7F1B /* TimeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +347,7 @@
 			files = (
 				2B759C0B205E99BD007C7F1B /* ViewController.swift in Sources */,
 				2B759C09205E99BD007C7F1B /* AppDelegate.swift in Sources */,
+				2B759C26205E9F07007C7F1B /* TimeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
