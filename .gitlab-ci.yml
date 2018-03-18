@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -project TimePlanner.xcodeproj -scheme TimePlanner
+    - xcodebuild test -project TimePlanner.xcodeproj -scheme TimePlanner -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2'
+  tags:
+    - ios_11-2
+    - xcode_9-2
+    - osx_10-13
