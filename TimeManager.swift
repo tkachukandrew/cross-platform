@@ -14,10 +14,9 @@ enum TimeType: String {
 }
 
 class TimeManager {
-    
     static var sharedInstance = TimeManager()
     
-    var timeObjects: [(Date, Date, TimeType)]
+    private var timeObjects: [(Date, Date, TimeType)]
     
     private init() {
         timeObjects = []
@@ -25,6 +24,34 @@ class TimeManager {
     
     func addTimeInterval(start: Date, end: Date) {
         timeObjects.removeAll()
-        timeObjects.append((start, end, .work))
+        let hours = TimeFormatter.hoursBetween(start: start, end: end)
+        var startTime = start
+        if hours > 0 {
+            for _ in 0..<hours {
+                let middleTime = TimeFormatter.dateByAdding45MinutesTo(startTime)
+                timeObjects.append((startTime, middleTime, .work))
+                let endTime = TimeFormatter.dateByAdding15MinutesTo(middleTime)
+                timeObjects.append((middleTime, endTime, .rest))
+                startTime = endTime
+            }
+            addSmallTimeInterval(start: startTime, end: end)
+        } else {
+           addSmallTimeInterval(start: startTime, end: end)
+        }
+    }
+    
+    private func addSmallTimeInterval(start: Date, end: Date) {
+        var startTime = start
+        if end.timeIntervalSince(startTime) > threeQuarters {
+            timeObjects.append((startTime, TimeFormatter.dateByAdding45MinutesTo(startTime), .work))
+            startTime = TimeFormatter.dateByAdding45MinutesTo(startTime)
+            timeObjects.append((startTime, end, .rest))
+        } else {
+            timeObjects.append((startTime, end, .work))
+        }
+    }
+    
+    func getTimeObjects() -> [(Date, Date, TimeType)] {
+        return timeObjects
     }
 }

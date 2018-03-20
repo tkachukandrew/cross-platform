@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X4N-fq-qRQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X4N-fq-qRQ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -69,7 +69,7 @@
                                                 <constraint firstItem="Jov-oM-xNh" firstAttribute="centerY" secondItem="rRU-tP-QjT" secondAttribute="centerY" id="rLh-cw-gsB"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.34260075365972442" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="1" green="0.34260075369999998" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="1" green="0.34260075369999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="endTime" destination="b5G-aW-raT" id="2Kv-Bz-Bxo"/>
@@ -121,7 +121,7 @@
                                                 <constraint firstItem="zEp-S6-BBA" firstAttribute="centerY" secondItem="cz2-kc-8cl" secondAttribute="centerY" id="fg1-pd-7Z4"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.41595914884715146" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.41595914884715146" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.41595914880000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="endTime" destination="eJW-fN-ByJ" id="86i-9g-yPg"/>
@@ -165,33 +165,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XN8-p0-Lhn">
-                                <rect key="frame" x="0.0" y="9805" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="112" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="543075216.27360296">
                                     <!--2018-03-18 14:13:36 +0000-->
                                 </date>
                                 <locale key="locale" localeIdentifier="uk_UA"/>
                             </datePicker>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YVu-MW-9rf">
-                                <rect key="frame" x="0.0" y="10062" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="369" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="543075216.27360296">
                                     <!--2018-03-18 14:13:36 +0000-->
                                 </date>
                                 <locale key="locale" localeIdentifier="uk_UA"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select start time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huv-p0-Yzf">
-                                <rect key="frame" x="122" y="9774" width="130.5" height="21"/>
+                                <rect key="frame" x="122" y="81" width="130.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select end time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJc-4j-zMc">
-                                <rect key="frame" x="125.5" y="10031" width="124" height="21"/>
+                                <rect key="frame" x="125.5" y="338" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs6-x8-GfI">
-                                <rect key="frame" x="172" y="10288" width="30" height="30"/>
+                                <rect key="frame" x="172" y="595" width="30" height="30"/>
                                 <state key="normal" title="GO"/>
                                 <connections>
                                     <action selector="goButtonPressed:" destination="Y7v-EB-lcU" eventType="touchUpInside" id="NI1-5h-Q5c"/>
