@@ -34,8 +34,10 @@ class TimeManager {
                 timeObjects.append((middleTime, endTime, .rest))
                 startTime = endTime
             }
-            addSmallTimeInterval(start: startTime, end: end)
-        } else {
+            if startTime != end {
+                addSmallTimeInterval(start: startTime, end: end)
+            }
+        } else if startTime != end {
            addSmallTimeInterval(start: startTime, end: end)
         }
     }

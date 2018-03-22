@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B30D8782061A6BC0047FE2C /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B30D8772061A6BC0047FE2C /* TimeFormatter.swift */; };
 		2B30D8792061A6BC0047FE2C /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B30D8772061A6BC0047FE2C /* TimeFormatter.swift */; };
+		2B6FB4B020644E450031DED8 /* IntervalSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6FB4AF20644E450031DED8 /* IntervalSetter.swift */; };
 		2B759BE3205E9427007C7F1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759BE2205E9427007C7F1B /* AppDelegate.swift */; };
 		2B759BE5205E9427007C7F1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B759BE4205E9427007C7F1B /* MainViewController.swift */; };
 		2B759BE8205E9427007C7F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B759BE6205E9427007C7F1B /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		2B30D8772061A6BC0047FE2C /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		2B6FB4AF20644E450031DED8 /* IntervalSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalSetter.swift; sourceTree = "<group>"; };
 		2B759BDF205E9427007C7F1B /* TimePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B759BE2205E9427007C7F1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B759BE4205E9427007C7F1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				2B759C0A205E99BD007C7F1B /* ViewController.swift */,
 				2B759C0C205E99BD007C7F1B /* Assets.xcassets */,
 				2B759C0E205E99BD007C7F1B /* Main.storyboard */,
+				2B6FB4AF20644E450031DED8 /* IntervalSetter.swift */,
 				2B759C11205E99BD007C7F1B /* Info.plist */,
 				2B759C12205E99BD007C7F1B /* TimePlannerMac.entitlements */,
 			);
@@ -361,6 +364,7 @@
 				2B30D8792061A6BC0047FE2C /* TimeFormatter.swift in Sources */,
 				2B759C0B205E99BD007C7F1B /* ViewController.swift in Sources */,
 				2B759C09205E99BD007C7F1B /* AppDelegate.swift in Sources */,
+				2B6FB4B020644E450031DED8 /* IntervalSetter.swift in Sources */,
 				2B759C26205E9F07007C7F1B /* TimeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
