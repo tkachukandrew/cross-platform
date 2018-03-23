@@ -22,7 +22,8 @@ class TimeFormatter {
         formatter.dateFormat = "HH:mm"
     }
     
-    func timeFrom(_ date: Date) -> String {
+    func timeFrom(_ date: Date, within locale:Locale) -> String {
+        formatter.locale = locale
         return formatter.string(from: date)
     }
     
@@ -32,10 +33,10 @@ class TimeFormatter {
     }
     
     static func dateByAdding15MinutesTo(_ date: Date) -> Date {
-        return Date(timeInterval: TimeInterval(exactly: quarter) ?? 0, since: date)
+        return Date(timeInterval: quarter, since: date)
     }
     
     static func dateByAdding45MinutesTo(_ date: Date) -> Date {
-        return Date(timeInterval: TimeInterval(exactly: threeQuarters) ?? 0, since: date)
+        return Date(timeInterval: threeQuarters, since: date)
     }
 }

@@ -35,7 +35,7 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         let text: String
         if tableColumn == tableView.tableColumns[0] {
             identifier = timeCell
-            text = "\(TimeFormatter.sharedInstance.timeFrom(TimeManager.sharedInstance.getTimeObjects()[row].0)) - \(TimeFormatter.sharedInstance.timeFrom(TimeManager.sharedInstance.getTimeObjects()[row].1))"
+            text = "\(TimeFormatter.sharedInstance.timeFrom(TimeManager.sharedInstance.getTimeObjects()[row].0, within: Locale(identifier: "uk_UA"))) - \(TimeFormatter.sharedInstance.timeFrom(TimeManager.sharedInstance.getTimeObjects()[row].1, within: Locale(identifier: "uk_UA")))"
         } else {
             identifier = typeCell
             text = TimeManager.sharedInstance.getTimeObjects()[row].2.rawValue

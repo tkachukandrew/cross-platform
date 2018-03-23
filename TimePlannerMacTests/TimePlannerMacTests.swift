@@ -11,26 +11,43 @@ import XCTest
 
 class TimePlannerMacTests: XCTestCase {
     
+    let formatter = DateFormatter()
+    var startTime: Date?
+    var endTime: Date?
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        formatter.dateFormat = "HH:mm"
+        formatter.locale = Locale(identifier: "uk_UA")
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTimeStringFromDate() {
+        let date = Date(timeIntervalSinceReferenceDate: 4200)
+        XCTAssertEqual(TimeFormatter.sharedInstance.timeFrom(date, within: Locale(identifier: "uk_UA")), "03:10")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testHoursCount() {
+        setUpTest(start: "16:00", end: "19:33")
+        XCTAssertEqual(TimeFormatter.hoursBetween(start: startTime ?? Date(), end: endTime ?? Date()), 3)
+    }
+    
+    func testAdding45Minutes() {
+        setUpTest(start: "16:00", end: "16:45")
+        XCTAssertEqual(endTime, TimeFormatter.dateByAdding45MinutesTo(startTime ?? Date()))
+    }
+    
+    func testAdding15Minutes() {
+        setUpTest(start: "16:00", end: "16:15")
+        XCTAssertEqual(endTime, TimeFormatter.dateByAdding15MinutesTo(startTime ?? Date()))
+    }
+    
+    func setUpTest(start: String, end: String) {
+        startTime = formatter.date(from: start)
+        endTime = formatter.date(from: end)
     }
     
 }
