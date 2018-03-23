@@ -1,6 +1,10 @@
 os: osx
 language: swift
 xcode-project: TimePlanner.xcodeproj
-xcode-scheme: TimePlanner
-xcode-scheme: TimePlannerMac
+xcode-scheme: [TimePlanner, TimePlannerMac]
 osx_image: xcode9.2
+script:
+  - xcodebuild clean -project TimePlanner.xcodeproj -scheme TimePlanner
+  - xcodebuild test -project TimePlanner.xcodeproj -scheme TimePlanner -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2'
+  - xcodebuild clean -project TimePlanner.xcodeproj -scheme TimePlannerMac
+  - xcodebuild test -project TimePlanner.xcodeproj -scheme TimePlannerMac
