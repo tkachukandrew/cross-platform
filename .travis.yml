@@ -1,0 +1,6 @@
+os: osx
+language: swift
+xcode-project: TimePlanner.xcodeproj
+xcode-scheme: TimePlanner
+xcode-scheme: TimePlannerMac
+osx_image: xcode9.2
