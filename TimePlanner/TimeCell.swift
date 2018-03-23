@@ -18,8 +18,8 @@ class TimeCell: UITableViewCell {
     }
     
     func populateWith(_ tuple:(Date, Date)) {
-        startTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.0)
-        endTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.1)
+        startTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.0, within: Locale(identifier: "uk_UA"))
+        endTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.1, within: Locale(identifier: "uk_UA"))
     }
 
 }
