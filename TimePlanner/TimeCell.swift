@@ -18,8 +18,11 @@ class TimeCell: UITableViewCell {
     }
     
     func populateWith(_ tuple:(Date, Date)) {
-        startTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.0, within: Locale(identifier: "en_GB"))
-        endTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.1, within: Locale(identifier: "en_GB"))
+        guard let timeZone = TimeZone(abbreviation: "UTC") else {
+            return
+        }
+        startTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.0, within: timeZone)
+        endTime.text = TimeFormatter.sharedInstance.timeFrom(tuple.1, within: timeZone)
     }
 
 }

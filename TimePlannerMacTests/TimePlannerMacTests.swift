@@ -18,7 +18,6 @@ class TimePlannerMacTests: XCTestCase {
     override func setUp() {
         super.setUp()
         formatter.dateFormat = "HH:mm"
-        formatter.locale = Locale(identifier: "en_GB")
     }
     
     override func tearDown() {

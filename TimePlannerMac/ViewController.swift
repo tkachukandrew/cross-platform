@@ -35,7 +35,7 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         let text: String
         if tableColumn == tableView.tableColumns[0] {
             identifier = timeCell
-            guard let timeZone = TimeZone(abbreviation: "EET") else {
+            guard let timeZone = TimeZone(abbreviation: "UTC") else {
                 return NSTableCellView()
             }
             text = "\(TimeFormatter.sharedInstance.timeFrom(TimeManager.sharedInstance.getTimeObjects()[row].0, within: timeZone)) - \(TimeFormatter.sharedInstance.timeFrom(TimeManager.sharedInstance.getTimeObjects()[row].1, within: timeZone))"
