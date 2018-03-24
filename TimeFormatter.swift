@@ -22,8 +22,8 @@ class TimeFormatter {
         formatter.dateFormat = "HH:mm"
     }
     
-    func timeFrom(_ date: Date, within locale:Locale) -> String {
-        formatter.locale = locale
+    func timeFrom(_ date: Date, within timeZone:TimeZone) -> String {
+        formatter.timeZone = timeZone
         return formatter.string(from: date)
     }
     

@@ -18,7 +18,7 @@ class TimePlannerMacTests: XCTestCase {
     override func setUp() {
         super.setUp()
         formatter.dateFormat = "HH:mm"
-        formatter.locale = Locale(identifier: "uk_UA")
+        formatter.locale = Locale(identifier: "en_GB")
     }
     
     override func tearDown() {
@@ -27,7 +27,11 @@ class TimePlannerMacTests: XCTestCase {
     
     func testTimeStringFromDate() {
         let date = Date(timeIntervalSinceReferenceDate: 4200)
-        XCTAssertEqual(TimeFormatter.sharedInstance.timeFrom(date, within: Locale(identifier: "uk_UA")), "03:10")
+        guard let timeZone = TimeZone(abbreviation: "UTC") else {
+            XCTFail()
+            return
+        }
+        XCTAssertEqual(TimeFormatter.sharedInstance.timeFrom(date, within: timeZone), "01:10")
     }
     
     func testHoursCount() {
